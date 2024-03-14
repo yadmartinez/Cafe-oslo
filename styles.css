@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.lanzador-menu{
+    text-decoration: none;
+    padding: 6px 10px;
+    color: #ccc;
+
+    display: none;
+}
+.home {
+    background-image: url(recursos/Fondo1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    height: 100vh; 
+    margin: 0; 
+    padding: 0; 
+}
+.home hr{
+    width: 10%;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.home .cake {
+    text-align: center;
+}
+.navbar{
+    font-weight: bold;
+    position: relative;
+    text-align: right;
+    width: 100%;
+    transition: background-color 0.5s ease;
+}
+.navbar ul{
+    margin-right: 30px;
+    list-style: none;
+    overflow: hidden;
+
+}
+.navbar ul li{
+    
+    display: inline-block;
+    
+}
+
+.logo{
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 40px;
+    position: absolute;
+    left: 0;
+}
+.navbar ul li a{
+    display: block;
+    text-decoration: none;
+    
+    color: #fff;
+    padding: 30px 15px;
+    font-size: 16px;
+    font-family: sans-serif;
+    transition: .4s;
+}
+.navbar ul li a:hover{
+    color: #d03b40;
+}
+.slogan{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #f5f0ed;
+    font-size: 44px;
+    font-family: sans-serif;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+}
+.separator{
+
+    width: 10%;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.cake{
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+    width: 50%;
+    z-index: 0;
+    font-size: 16px;
+    color: #fff;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.tittle{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.text{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.red{
+    color: #f5f0ed;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    min-height: 380px;
+    width: 50%;
+    background-color: #d03b40;
+}
+
+.white{
+    color: #d03b40;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    min-height: 380px;
+    width: 50%;
+    background-color: #ded6c0;
+}
+.breakfast{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 530px;
+    background-image: url(recursos/Fondo2.jpg);
+    margin-bottom: 15px;
+    background-size: cover;
+    color: #f5f0ed;
+    background-repeat: no-repeat;
+}
+.breakfast .tittle{
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+.breakfast .text{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.text a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #d03b40;
+    margin-bottom: 20px;
+}
+.text strong{
+    font-size: 16px;
+}
+input{
+    width: auto;
+    height: 40px;
+    border: solid;
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-color: #f5f0ed;
+    color: #f5f0ed;
+    background-color: rgba(255, 255, 255, 0);
+    transition: 0.5s 
+}
+input:hover{
+    background-color: #f5f0ed;
+    color: #231714;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+
+.breakfast p{
+    margin-top: 20px;
+}
+hr{
+    width: 10%;
+}
+.products{
+    display: flex;
+
+}
+.product{
+    display: flex;
+    width: 50%;
+    
+}
+.product img{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 150px;
+}
+.card2{
+    margin: 20px;
+    color: #3c3c3b;
+}
+strong{
+    font-size: 24px;
+    font-weight: bold;
+}
+footer{
+    padding: 60px 20px;
+    background-color: #231714;
+    color: #f5f0ed;
+}
+@media screen and (max-width: 700px) {
+    .navbar{
+        position: fixed;
+        z-index: 1;
+    }
+    .navbar.cambio-color{
+        background-color: #231714;
+    }
+    .lanzador-menu{
+        display: inline;
+        font-size:44px;
+       
+    }
+    .navbar ul{
+        margin-right: 0;
+        background-color: #231714;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+    .white{
+        width: 100%;
+    }
+    .red{
+        width: 100%;
+    }
+    .products{
+        flex-direction: column;
+    }
+    .product{
+        width: 100%;
+    }
+    .js .navegacion{
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out;
+        position: absolute;
+        top: 43px;
+        left: 30px;
+        margin-top: 15px;
+        right: 30px;
+        background-color: #231714;
+    }
+    .js .navegacion a{
+        color: #ccc;
+        padding: 5px 10px;
+        border-top: 1px solid #575757;
+    }
+    
+    .js .navegacion.menu-desplegado{
+        
+        max-height: 200px;
+        z-index: 2;
+    }
+}
